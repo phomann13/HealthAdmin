@@ -2,11 +2,71 @@ head{
 
 }
 body{
-
+    margin: 0;
     background-color: rgb(191, 191, 207);
 }
 h1{
     text-align: center;
     background-color: rgb(191, 191, 207);
     color: red
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background: aqua;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.logo{
+   
+    width: 10%;
+    float: left;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 90px;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 00;
+}
+nav a:hover{
+    color:green;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
 }
