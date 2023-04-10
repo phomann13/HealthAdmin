@@ -1,14 +1,8 @@
-head{
 
-}
 body{
     margin: 0;
-    background-color: rgb(191, 191, 207);
-}
-h1{
-    text-align: center;
-    background-color: rgb(191, 191, 207);
-    color: red
+    background-color: white;
+    align-content: center;
 }
 
 .container{
@@ -23,10 +17,20 @@ header::after{
     display: table;
     clear: both;
 }
+footer{
+    background: aqua;
+    text-align: center;
+}
 .logo{
    
     width: 10%;
     float: left;
+}
+
+.search{
+    width: 18px;
+    margin: 0;
+    padding: 0;
 }
 nav{
     float: right;
@@ -40,7 +44,7 @@ nav ul{
 
 nav li{
     display: inline-block;
-    margin-left: 90px;
+    margin-left: 70px;
     padding-top: 15px;
     position: relative;
 }
@@ -54,6 +58,8 @@ nav a{
 }
 nav a:hover{
     color:green;
+    font-size: large;
+
 }
 
 nav a::before{
@@ -69,4 +75,70 @@ nav a::before{
 
 nav a:hover::before{
     width: 100%;
+}
+
+.searchContainer{
+    margin: auto;
+    margin-top: 20%;
+    
+}
+.searchContainer > ul > li{
+    font-size: larger;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+}
+.bar{
+    background-color: red;
+    margin:auto;
+    width:575px;
+    border-radius:30px;
+    border:1px solid #dcdcdc;
+  }
+  .bar:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+  }
+  .bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+  }
+  .searchbar{
+    border-radius: 30px;
+    height:45px;
+    border:none;
+    width:500px;
+    font-size:16px;
+    outline: none;
+  }
+  .conditions ul li {
+    list-style: none;
+  }
+  .condition a{
+    color: blue;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .condition a:hover{
+    text-shadow: .5px .5px blue;
+  }
+  .condition h1{
+    font-size: 20px;
+    line-height: 20%;
+  }
+  h2{
+    text-align: center;
+  }
+.conditionpic{
+    height: 250px;
+    width: 150px;
+}
+.cContainer{
+    text-align: center;
+}
+
+.iframe{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
 }
